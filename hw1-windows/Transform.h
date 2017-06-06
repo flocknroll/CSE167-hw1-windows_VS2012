@@ -11,14 +11,14 @@
 // glm provides vector, matrix classes like glsl
 // Typedefs to make code more readable 
 
-typedef glm::mat3 mat3 ;
-typedef glm::mat4 mat4 ; 
-typedef glm::vec3 vec3 ; 
-typedef glm::vec4 vec4 ; 
-const float pi = 3.14159265 ; // For portability across platforms
+typedef glm::mat3 mat3;
+typedef glm::mat4 mat4;
+typedef glm::vec3 vec3;
+typedef glm::vec4 vec4;
+const float pi = 3.14159265; // For portability across platforms
 
 
-class Transform  
+class Transform
 {
 public:
 	Transform();
@@ -26,6 +26,6 @@ public:
 	static void left(float degrees, vec3& eye, vec3& up);
 	static void up(float degrees, vec3& eye, vec3& up);
 	static mat4 lookAt(vec3 eye, vec3 up);
-	static mat3 rotate(const float degrees, const vec3& axis) ;
+	static mat3 rotate(const float degrees, const vec3& axis);
 };
 
